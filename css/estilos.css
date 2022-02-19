@@ -1,0 +1,52 @@
+body {
+  display: grid;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  grid-template-areas: 'header header header' 'main main main' 'main main main' 'main main main' 'footer footer footer'; }
+  body header {
+    grid-area: header; }
+    body header .ul-header {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+    body header .ul-header li {
+      display: inline;
+      align-content: center;
+      justify-items: space-evenly;
+      padding: 10px; }
+    body header .ul-header {
+      margin-top: 40px;
+      margin-left: 100px; }
+    body header .ul-header a {
+      text-decoration: none;
+      color: blue; }
+    body header .nav-header {
+      display: inline; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  body main {
+    height: 80vh;
+    grid-area: main;
+    background-image: url("/imagenes/fondo_pagina.PNG"); }
+    body main .titulo {
+      font-size: 100px;
+      justify-items: center;
+      align-items: center;
+      animation-duration: 2s;
+      animation-name: aparecer;
+      animation-iteration-count: infinite; }
+    body main .texto {
+      font-size: 30px;
+      justify-items: center;
+      align-items: center; }
+  body footer {
+    grid-area: footer; }
+    body footer .footer {
+      display: inline-flex; }
+    body footer .footer li {
+      display: inline-flex; }
