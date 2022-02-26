@@ -1,3 +1,14 @@
+.redes--facebook {
+  background-color: #3a5795; }
+
+.redes--instagram {
+  background-color: #be188d; }
+
+.redes, .redes--facebook--imagen, .redes--instagram--imagen {
+  width: 20px;
+  height: 20px;
+  display: inline; }
+
 body {
   display: grid;
   font-family: 'Josefin Sans', sans-serif;
